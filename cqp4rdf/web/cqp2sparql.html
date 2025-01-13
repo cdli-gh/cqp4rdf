@@ -180,7 +180,7 @@ $(window).on('load', function () {
         $("#result").html("<i>Loading...</i>");
         $.ajax({
             type: 'GET',
-            url: "{{ config['api']['path'] }}api/info",
+            url: "{{ config['api']['path'] }}api/query",
             data: {cqp: $("#cqp").val(), page: page, corpus: $("#corpus").val()}
         }).done(function (data) {
             if (data) {
